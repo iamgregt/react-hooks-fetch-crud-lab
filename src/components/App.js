@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AdminNavBar from "./AdminNavBar";
 import QuestionForm from "./QuestionForm";
+import QuestionItem from "./QuestionItem";
 import QuestionList from "./QuestionList";
 
 function App() {
@@ -23,11 +24,23 @@ function App() {
   }
 
   function handleDeletedQuestion(deletedQuestion){
+    console.log(deletedQuestion.id)
     const updatedQuestions = questions.filter((question) => {
-      return question.id !== deletedQuestion
+      return question.id !== deletedQuestion.id
     })
     setQuestions(updatedQuestions)
   }
+
+  // function handleUpdatedAnswer(updatedQuestion){
+  //   const updatedQuestions = questions.map((question) => {
+  //     if(question.id === updatedQuestion.id){
+  //       return updatedQuestion
+  //     } else{
+  //       return question
+  //     }
+  //   })
+  //   setQuestions(updatedQuestions)
+  // }
 
   return (
     <main>

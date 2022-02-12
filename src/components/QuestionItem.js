@@ -17,6 +17,19 @@ function QuestionItem({ question, onDelete }) {
     .then(() => onDelete(question))
   }
 
+  function handleAnswerChange(){
+    // fetch(`http://localhost:4000/question/${question.id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify({
+    //    "correctIndex": question.correctIndex
+    //   })
+    //   .then(r => r.json())
+    // })
+  }
+
   return (
     <li>
       <h4>Question {id}</h4>

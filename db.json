@@ -1,28 +1,6 @@
 {
   "questions": [
     {
-      "id": 2,
-      "prompt": "A React component is a function that returns ______.",
-      "answers": [
-        "HTML",
-        "JSX",
-        "props",
-        "state"
-      ],
-      "correctIndex": 1
-    },
-    {
-      "id": 3,
-      "prompt": "Which event handler will run when a user is finished filling out a form?",
-      "answers": [
-        "onSubmit",
-        "onClick",
-        "onChange",
-        "onForm"
-      ],
-      "correctIndex": 0
-    },
-    {
       "id": 4,
       "prompt": "______ is a tool that transpiles JSX into valid JavaScript.",
       "answers": [
@@ -32,6 +10,17 @@
         "ES6"
       ],
       "correctIndex": 1
+    },
+    {
+      "prompt": "Who am i?",
+      "answers": [
+        "Greg",
+        "Teresa",
+        "Todd",
+        "Max"
+      ],
+      "correctIndex": 0,
+      "id": 5
     }
   ]
 }
